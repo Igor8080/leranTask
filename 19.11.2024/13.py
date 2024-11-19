@@ -1,0 +1,6 @@
+n = int(input("Введите количество чисел: "))
+numbers = list(map(int, input("Введите числа: ").split()))
+count = sum([1 for x in numbers if x % 5 == 0 and x % 7 != 0])
+sum_of_numbers = sum([x for x in numbers if x % 5 == 0 and x % 7 != 0])
+print("Количество:", count)
+print("Сумма:", sum_of_numbers)
